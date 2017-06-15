@@ -4,11 +4,6 @@
   "description": "example project for kezhiyin",
   "main": "index.js",
   "scripts": {
-    "android:launch": "${ANDROID_HOME}/emulator/emulator -avd ${AVD_NAME}",
-    "android:app:install": "${ANDROID_HOME}/platform-tools/adb install -r ./app/Walmart.apk",
-    "android:app:clear": "${ANDROID_HOME}/platform-tools/adb shell pm clear com.walmart.android",
-    "android:app:test": "DPRO=android ./node_modules/.bin/magellan --config magellan.json --local_browser appiumandroidapp  --test tests/demo-app.js --serial",
-    "test:android": "npm run android:app:install && npm run android:app:clear && npm run android:app:test",
     "test:ios": "DPRO=ios ./node_modules/.bin/magellan --config magellan.json --local_browser appiumiosapp  --test tests/demo-app.js --serial",
     "magellan:setup": "exit 0",
     "magellan:teardown": "exit 0"
