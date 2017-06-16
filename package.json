@@ -4,7 +4,7 @@
   "description": "example project for kezhiyin",
   "main": "index.js",
   "scripts": {
-    "test:ios": "DPRO=ios ./node_modules/.bin/magellan --config magellan.json --local_browser appiumiosapp  --test tests/demo-app.js --serial",
+    "test:ios": "./node_modules/.bin/magellan --local_browser appiumiosapp --test tests/demo-app.js --max_test_attempts 1",
     "magellan:setup": "exit 0",
     "magellan:teardown": "exit 0"
   },
