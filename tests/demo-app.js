@@ -4,17 +4,17 @@ const dpro = require("dpro");
 const RECORD_NAME = `magellan test - ${dpro.customerName}`;
 
 module.exports = new Test({
-  tags: ["app"],
+  tags: ["app", "ios"],
 
   "login": function (client) {
     client
       .tap(150, 300)
-      .keys("Manager@car.com")
+      .keys(dpro.username)
       .pause(2000)
       .tap(150, 150)
       .pause(2000)
       .tap(150, 350)
-      .keys("123")
+      .keys(dpro.password)
       .tap(150, 150)
       .tap(150, 550)
       .pause(5000);
